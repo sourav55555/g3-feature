@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font for all elements */
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    background: rgba(255, 144, 14, 0.1);
+}
+.container{
+    max-width: 78%;
+    margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+}
+nav .logo h2{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul li a{
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner css */
+.banner{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+.banner-content{
+    width: 55%;
+    margin: auto;
+}
+.banner-content h2{
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 30px;
+}
+.banner-content p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.banner-content a{
+    text-decoration: none;
+    padding: 20px 25px;
+    background-color: #FF900E;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 9px;
+}
+.banner img{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+/* features css */
+section{
+    width: 100%;
+}
+.features{
+    padding-top: 85px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.features-images{
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+.features-images img{
+    width: 100%;
+}
+.features-content{
+    width: 40%;
+    margin-left: 30px;
+}
+.features-content h3{
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 25px;
+
+}
+.features-content h3>.span1{
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+.features-content h3>.span2{
+    display: block;
+    color: #FF900E;
+    font-weight: 700;
+}
+.features-content p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 55px;
+}
+.features-content a{
+    text-decoration: none;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #FF900E;
+    color: white;
+}
+
+
+/*---- loved features ----*/
+.loved-features{
+    margin-top: 130px;
+}
