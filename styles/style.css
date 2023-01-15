@@ -589,3 +589,93 @@ footer p{
 
     }
 }
+
+/*--------
+     responsive for medium/tablet devices
+------- */
+@media screen and (min-width:769px) and (max-width:992px){
+    .container{
+        max-width: 90%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav .logo{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin-top: 75px;
+    }
+    .banner-content{
+        width: 85%;
+    }
+    .banner-content h2{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    /* feature css */
+    .features{
+        flex-direction: column;
+    }
+    .features-images{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .features-content{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* loved features */
+    .loved-features{
+        margin-top: 110px;
+    }
+    .feature-area{
+        flex-direction: column;
+    }
+    .feature-details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .feature-image-single{
+        width: 97%;
+        text-align: center;
+    }
+    .experience{
+        left: 5%;
+    }
+    .facts p{
+        width: 70%;
+    }
+    .fact-list{
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+    /* sponsors */
+    .sp-logo{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:35px
+    }
+
+    /* connect us */
+    .connect-us .connect{
+        height: 40vh;
+    }
+    .connect-area{
+        width: 50%;
+        margin-left: 20px;
+    }
+    .connect-form{
+        width: 45%;
+    }
+}
+
+/* other screen responsive */
+@media screen and (max-width:1300px) and (min-width:991px) {
+    .banner-content{
+        width: 75%;
+    }
+}
