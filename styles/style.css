@@ -118,7 +118,6 @@ section{
 }
 .features-content h3>.span1{
     font-weight: 500;
-    font-size: 45px;
     color: #727272;
 }
 .features-content h3>.span2{
@@ -357,7 +356,7 @@ section{
     font-weight: 700;
     font-size: 45px;
     margin-bottom: 25px;
-    color: black
+    color: black;
 }
 .connect-area p{
     font-weight: 500;
@@ -420,4 +419,173 @@ footer p{
     text-align: center;
     color: #424242;
     margin: auto;
+}
+
+
+/* -------
+  small device responsive css
+  -------- */
+@media screen and (max-width:768px){
+    .container{
+        max-width: 91%;
+    }
+    /* header css */
+    nav{
+        flex-direction: column;
+    }
+    nav .logo h2{
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 28px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    .banner{
+        margin-top: 60px;
+        
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-content h2{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .banner-content p{
+        font-size: 14px;
+    }
+    .banner-content a{
+        font-size: 18px;
+    }
+
+    /* features css */
+    .features{
+        width: 100%;
+        flex-direction: column;
+    }
+    .features-images{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .features-content{
+        width: 100%;
+        margin: 40px auto;
+    }
+    .features-content h3{
+        font-size: 28px;
+    }
+    .features-content a{
+        font-size: 18px;
+    }
+
+    /* -- loved features css -- */
+    .loved-features{
+        margin-top: 65px;
+    }
+    .feature-area{
+        flex-direction: column;
+    }
+    .feature-details{
+        width: 100%;
+    }
+    .feature-details h3{
+        font-size: 28px;
+        width: 70%;
+    }
+    .feature-details p{
+        font-size: 14px;
+    }
+
+    .feature-image-single{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .feature-image-single img{
+        height: 98%;
+        width: 80%;
+    }
+    .experience{
+        padding: 25px 21px;
+        left: 5%;
+        bottom: -5%;
+    }
+    .experience h3{
+        font-size: 28px;
+    }
+    .experience p{
+        font-size: 15px;
+    }
+
+    /* facts css */
+    .facts{
+        margin-top: 80px;
+        text-align: center;
+    }
+    .facts h3{
+        font-size: 28px;
+    }
+    .facts p{
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .fact-list{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* -- sponsors css -- */
+    .sponsors h3{
+        font-size: 28px;
+    }
+    .sponsors p{
+        font-size: 14px;
+        width: 100%;
+    }
+    .sp-logo{
+        flex-direction: column;
+        width: 40%;
+        gap: 45px;
+        margin: auto;
+    }
+
+    /* connect us section css */
+    .connect-us{
+        margin-top: 100px;
+    }
+    .connect-us .connect{
+        flex-direction: column;
+        background-image: linear-gradient(180deg, rgba(255,144,14,0.87) 0%, rgba(196,196,196,0.5) 100%), url("../images/connect-responsive.jpg");
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .connect-area{
+        width: 100%;
+        padding: 40px 30px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .connect-area h3{
+        font-size: 28px;
+    }
+    .connect-area p{
+        font: 14px;
+    }
+
+    .connect-form{
+        width: 95%;
+        margin-left: 0;
+        padding-bottom: 40px;
+    }
+
+    /* footer */
+    footer{
+       display: grid;
+       place-items: center;
+
+    }
 }
