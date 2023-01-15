@@ -16,7 +16,7 @@ p{
 header{
     height: auto;
     width: 100%;
-    background: rgba(255, 144, 14, 0.1);
+    background: #ff900e1a;
 }
 .container{
     max-width: 78%;
@@ -257,11 +257,13 @@ section{
     border: 1px solid #FF900E;
     border-radius: 8px;
     cursor: pointer;
+    transition: all .35s linear;
 }
 .fact-card img{
     height: 45px;
     width: 45px;
     margin-bottom: 10px;
+    transition: all .35s linear;
 }
 .fact-card h4{
     font-weight: 600;
@@ -275,6 +277,16 @@ section{
     font-size: 20px;
     color: #727272;
 }
+
+.fact-card:hover{
+    transform: scale(1.13);
+    border: 3px solid #f88400;
+}
+.fact-card:hover > img{
+    transform: scale(1.6) translateY(-35px) skew(15deg,-20deg);
+    box-shadow: 5px 15px 12px rgb(201, 201, 201);
+}
+
 
 /* sponsors css */
 .sponsors{
@@ -304,11 +316,89 @@ section{
     display: flex;
     justify-content: space-around;
     margin-bottom: 130px;
+    position: relative;
 }
+
+/* changing image color */
+
 .sp-logo img{
-    background:black;
-    mix-blend-mode: multiply;
+    filter: invert(20%) sepia(0%) saturate(0%) hue-rotate(66deg) brightness(96%) contrast(89%);
 }
+
+
+/* ----------
+   connect us section css
+   ---------- */
+.connect-us{
+    width: 100%;
+}
+.connect-us .connect{
+    width: 100%;
+    height: 56vh;
+    
+    background-image: linear-gradient(90deg, rgba(255,144,14,0.87) 0%, rgba(196,196,196,0.5) 100%), url("../images/connect-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .35s linear;
+}
+.connect:hover{
+    background-image: linear-gradient(90deg, rgba(255,144,14,0.93) 0%, rgba(196,196,196,0.75) 100%), url("../images/connect-bg.jpg");
+}
+
+.connect-area{
+    width: 40%;
+}
+.connect-area h3{
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: black
+}
+.connect-area p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #393939;
+}
+.connect-form{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 20px;
+}
+.connect-form input, textarea{
+    height: 50px;
+    width: 85%;
+    margin: auto;
+    padding: 16px;
+    font-size: 16px;
+    color: #000000;
+    border-radius: 10px;
+    outline: none;
+    border: 4px solid #000000;
+    background-color: rgba(255, 157, 45,0.5);
+}
+.connect-form textarea{
+    height: auto;
+}
+.connect-form input[type="submit"]{
+    width: auto;
+    padding: 13px 28px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #FF900E;
+    color: white;
+    cursor: pointer;
+    margin-left: 8%;
+}
+
+
 
 /* footer css */
 footer{
